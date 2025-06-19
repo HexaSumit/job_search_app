@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.auto-slide-in-left {
+  animation: slideInLeft 1.2s ease-out forwards;
+}
+
+
+@keyframes slideInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auto-slide-in-bottom {
+  animation: slideInBottom 1.2s ease-out forwards;
+}
+
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); /* Upar se */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auto-slide-in-top {
+  animation: slideInTop 1.2s ease-out forwards;
+}
+
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-35px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.infinite-up-down {
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
