@@ -70,13 +70,13 @@ function page() {
 
     return (
         <div className=" bg-gray-100 ">
-            <div className=" pt-40 flex justify-center items-center">
+            <div className=" pt-32 flex justify-center items-center">
                 <h1 className=" auto-slide-in-top text-7xl text-blue-800 font-semibold pb-2 mb-6 w-fit">
                     Available Organizations
                 </h1>
             </div>
             <div className=" z-10 auto-slide-in-left pt-10 pb-25">
-                <div className=" grid grid-cols-2 gap-10 max-w-[1000px] mx-auto  ">
+                <div className=" grid grid-cols-2 gap-10 max-w-[900px] mx-auto  ">
                     {companies.map((company, index) => (
                         <div
                             key={index}
